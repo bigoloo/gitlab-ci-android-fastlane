@@ -1,6 +1,5 @@
 FROM phusion/baseimage:0.10.0
-LABEL maintainer="United Classifieds <unitedclassifiedsapps@gmail.com>"
-
+MAINTAINER Amin Bahiraei <mr.bahiraee@gmail.com>
 CMD ["/sbin/my_init"]
 
 ENV LC_ALL "en_US.UTF-8"
@@ -42,10 +41,5 @@ RUN ${ANDROID_HOME}/tools/bin/sdkmanager "platform-tools" "tools" "platforms;and
 RUN ${ANDROID_HOME}/tools/bin/sdkmanager "extras;android;m2repository" "extras;google;google_play_services" "extras;google;m2repository"
 
 RUN gem install fastlane
-
-ADD id_rsa $HOME/.ssh/id_rsa
-ADD id_rsa.pub $HOME/.ssh/id_rsa.pub
-ADD adbkey $HOME/.android/adbkey
-ADD adbkey.pub $HOME/.android/adbkey.pub
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
