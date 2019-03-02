@@ -1,6 +1,7 @@
 
-[![](https://images.microbadger.com/badges/version/bigoloo/fastlane-android-docker.svg)](https://microbadger.com/images/bigoloo/fastlane-android-docker "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/bigoloo/fastlane-android-docker.svg)](https://microbadger.com/images/bigoloo/fastlane-android-docker "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/bigoloo/gitlab-ci-android-fastlane.svg)](https://microbadger.com/images/bigoloo/fastlane-android-docker "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/bigoloo/gitlab-ci-android-fastlane.svg)](https://microbadger.com/images/bigoloo/fastlane-android-docker "Get your own image badge on microbadger.com")
+
 
 # gitlab-ci-android-fastlane
 This Docker image contains the Android SDK and most common packages necessary for building Android apps in a CI tool like GitLab CI (Android SDK, git, fastlane). Make sure your CI environment's caching works as expected, this greatly improves the build time, especially if you use multiple build jobs.
