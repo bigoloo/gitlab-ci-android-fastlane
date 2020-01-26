@@ -39,7 +39,7 @@ RUN mkdir -p $HOME/.android && touch $HOME/.android/repositories.cfg
 RUN ${ANDROID_HOME}/tools/bin/sdkmanager "emulator" "tools" "platform-tools"
 
 RUN yes | sdkmanager \
-    "platforms;android-28" \
+    "platforms;android-29" \
     "platforms;android-28" \
     "platforms;android-27" \
     "platforms;android-26" \
