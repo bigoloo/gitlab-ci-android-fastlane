@@ -40,6 +40,7 @@ RUN ${ANDROID_HOME}/tools/bin/sdkmanager "emulator" "tools" "platform-tools"
 
 RUN yes | sdkmanager \
     "platforms;android-28" \
+    "platforms;android-28" \
     "platforms;android-27" \
     "platforms;android-26" \
     "platforms;android-25" \
@@ -49,6 +50,7 @@ RUN yes | sdkmanager \
     "platforms;android-21" \
     "platforms;android-19" \
     "platforms;android-17" \
+    "build-tools;29.0.0" \
     "build-tools;28.0.3" \
     "build-tools;28.0.2" \
     "build-tools;28.0.1" \
